@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
+:root {
+  --border-radius-div: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(185, 185, 185);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.background_login {
+  display: flex;
+  height: auto;
+  margin: 0 15%;
+  width: 50%;
+  background-color: rgb(146, 146, 146);
+  border-radius: var(--border-radius-div);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.login_input {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  align-self: stretch;
+  border-radius: var(--border-radius-div) 0 0 var(--border-radius-div);
+  padding: 10px;
+  width: 30%;
+  background-color: rgb(71, 71, 73);
 }
 
-.App-link {
-  color: #61dafb;
+.login_input > * {
+  padding: 10px;
+  border-radius: 50px;
+  min-height: 25px;
+  width: calc(100% - 20px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login_information {
+  border-radius: 0 var(--border-radius-div) var(--border-radius-div) 0;
+  display: flex;
+  text-align: flex-end;
+  background-color: red;
+  width: 70%;
 }
