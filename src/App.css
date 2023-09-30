@@ -85,14 +85,24 @@
 
 #register-form{
   padding : 20px;
+  width: 40%;
+}
+
+#register-side{
+  width: 60%;
+  text-align: center;
+}
+
+
+.two-columns{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.two-column div{
   width: 100%;
 }
 
-.flex-rows{
-  display: flex;
-}
-
-.col-50{
-  padding : 0px 20px;
-  width: 50%;
+.form-item{
+  margin: 5px 10px 0px 10px;
 }
