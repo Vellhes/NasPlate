@@ -78,21 +78,20 @@
   font-size: 16px;
 }
 
-#btn-connexion{
-  margin-top : 30px;
+#btn-connexion, #btn-inscription{
+  margin-top : 20px;
   margin-bottom : 15px;
 }
 
 #register-form{
   padding : 20px;
-  width: 40%;
+  width: 50%;
 }
 
 #register-side{
-  width: 60%;
+  width: 50%;
   text-align: center;
 }
-
 
 .two-columns{
   display: grid;

@@ -1,4 +1,5 @@
 import logo from '../img/nasplate.png';
+import {Link} from "react-router-dom";
 export default function Register(){
     return(
         <div id="body-form-register">
@@ -28,6 +29,11 @@ export default function Register(){
                     </div>
                     <div className="form-item">
                         <button className="button-default" id="btn-inscription">Valider l'inscription</button>
+                    </div>
+                    <div className='form-item'>
+                        <Link to="/login">
+                            Connectez-vous
+                        </Link>
                     </div>
                 </div>
                 <div id="register-side">
