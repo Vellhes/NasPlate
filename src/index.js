@@ -7,7 +7,9 @@ import {
 } from "react-router-dom";
 import App from './App';
 import Login from "./routes/login";
-import Register from "./routes/register"
+import Register from "./routes/register";
+import Profil from "./routes/profil";
+import AddNasForm from "./routes/Nas/NasAddForm";
 import reportWebVitals from './reportWebVitals';
 
 const router = createBrowserRouter([
@@ -22,6 +24,14 @@ const router = createBrowserRouter([
   {
     path : "/register",
     element : <Register/>
+  },
+  {
+    path : "/profil",
+    element : <Profil/>
+  },
+  {
+    path : "/AddNas",
+    element : <AddNasForm/>
   }
 ]);
 
