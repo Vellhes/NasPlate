@@ -10,6 +10,7 @@ import Login from "./routes/login";
 import Register from "./routes/register";
 import Profil from "./routes/profil";
 import AddNasForm from "./routes/Nas/NasAddForm";
+import ListNas from "./routes/Nas/NasList";
 import reportWebVitals from './reportWebVitals';
 
 const router = createBrowserRouter([
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
   {
     path : "/AddNas",
     element : <AddNasForm/>
+  },
+  {
+    path: "/ListNas",
+    element : <ListNas/>
   }
 ]);
 
