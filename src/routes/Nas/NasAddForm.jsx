@@ -31,19 +31,8 @@ export default function NasAddForm(){
                             "pays" : pays
                         }
 
-                        //On passe la chaine en JSON
-                        var json = JSON.stringify(jsonString)
-
-                        //On crée le fichier
-                        const blob = new Blob([json], { type: 'application/json' });
-                        const url = URL.createObjectURL(blob);
                         
-                        const a = document.createElement('a');
-                        a.href = url;
-                        a.download = 'data.json';
-                        a.click();
                         
-                        URL.revokeObjectURL(url);
                     }else{
                         alert("Votre masque de sous-réseau ne correspond pas au format attendu 'XXX.XXX.XXX.XXX'");
                     }

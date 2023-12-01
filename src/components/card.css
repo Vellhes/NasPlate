@@ -1,24 +1,30 @@
 .card {
-    width: 12rem;
+    width: 15rem;
     border: 1px solid #ccc;
     border-radius: 20px;
-    padding: 1rem;
+    padding: 0;
     margin: 1rem;
     text-align: center;
-   }
-   
-   .card img {
-    width: 100%;
-    height: auto;
-   }
-   
-   .card-links a {
-    display: inline-block;
-    margin: 0.5rem;
-    text-decoration: none;
-    color: #007bff;
-   }
-   
-   .card-links a:hover {
-    text-decoration: underline;
-   }
+}
+
+.card img {
+width: 100%;
+height: auto;
+border-radius: 20px 20px 0px 0px;
+}
+
+.card-links a {
+display: inline-block;
+margin: 0.5rem;
+text-decoration: none;
+color: #007bff;
+}
+
+.card-links a:hover {
+text-decoration: underline;
+}
+
+.cardDescription{
+    padding: 1rem;
+    padding-top: 0;
+}
