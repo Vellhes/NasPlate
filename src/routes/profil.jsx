@@ -1,5 +1,6 @@
 
 export default function Profil(){
+    console.log("aaa",localStorage.getItem("AUTH_TOKEN"))
     return(
         <div className="body-backOffice">
             <div className="cellDefault">

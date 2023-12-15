@@ -1,6 +1,7 @@
-import './temp.css';
+//import './temp.css';
 import Card from './components/Card';
-import Navbar from './components/Navbar';
+//import Navbar from './components/Navbar';
+import './App.css'
 
 function App() {
   return (

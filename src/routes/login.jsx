@@ -33,7 +33,8 @@ export default function Login() {
             if (response.ok) {
                 // Connection successfull
                 // Récupération du token JWT de node pour pouvoir faire 
-
+                const token = await response.text(); // Convertir le contenu en texte
+                localStorage.setItem("AUTH_TOKEN", token);
             } else {
                 // Error connection
                 const errorMessage = await response.json();
@@ -59,7 +60,7 @@ export default function Login() {
                             type='text'
                             placeholder='Votre identifiant'
                             className="input-text"
-                            valueEmail={email}
+                            valueEmail={email} //Erreur du DOM dans la console
                             onChange={handleEmail}>
                         </input>
                     </div>
@@ -70,7 +71,7 @@ export default function Login() {
                             type='password'
                             placeholder='Votre mot de passe'
                             className="input-text"
-                            valuePassword={password}
+                            valuePassword={password} //Erreur du DOM dans la console
                             onChange={handlePassword}>
                         </input>
                     </div>
