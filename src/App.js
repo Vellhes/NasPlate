@@ -1,96 +1,23 @@
 //import './temp.css';
-import Card from './components/Card';
-//import Navbar from './components/Navbar';
+import Navbar from './components/navbar/Navbar';
+import Footer from './components/footer/Footer';
+import Card from './components/card/Card';
 import './App.css'
 
 function App() {
   return (
     <div className="App">
+      <Navbar></Navbar>
       
-      {/* <Navbar>
-        
-      </Navbar> */}
-
       <Card
         title="Nom du NAS"
         text="Est-ce qu'on peut pas allé se faire foutre un peu là ?"
-        imgSrc="https://via.placeholder.com/250"
+        imgSrc="https://via.placeholder.com/150"
         links={[
           { url: '#', text: 'Se connecter' },
         ]}
       />
-      <Card
-        title="Nom du NAS"
-        text="Est-ce qu'on peut pas allé se faire foutre un peu là ?"
-        imgSrc="https://via.placeholder.com/250"
-        links={[
-          { url: '#', text: 'Se connecter' },
-        ]}
-      />
-      <Card
-        title="Nom du NAS"
-        text="Est-ce qu'on peut pas allé se faire foutre un peu là ?"
-        imgSrc="https://via.placeholder.com/250"
-        links={[
-          { url: '#', text: 'Se connecter' },
-        ]}
-      />
-      <Card
-        title="Nom du NAS"
-        text="Est-ce qu'on peut pas allé se faire foutre un peu là ?"
-        imgSrc="https://via.placeholder.com/250"
-        links={[
-          { url: '#', text: 'Se connecter' },
-        ]}
-      />
-      <Card
-        title="Nom du NAS"
-        text="Est-ce qu'on peut pas allé se faire foutre un peu là ?"
-        imgSrc="https://via.placeholder.com/250"
-        links={[
-          { url: '#', text: 'Se connecter' },
-        ]}
-      />
-      <Card
-        title="Nom du NAS"
-        text="Est-ce qu'on peut pas allé se faire foutre un peu là ?"
-        imgSrc="https://via.placeholder.com/250"
-        links={[
-          { url: '#', text: 'Se connecter' },
-        ]}
-      />
-      <Card
-        title="Nom du NAS"
-        text="Est-ce qu'on peut pas allé se faire foutre un peu là ?"
-        imgSrc="https://via.placeholder.com/250"
-        links={[
-          { url: '#', text: 'Se connecter' },
-        ]}
-      />
-      <Card
-        title="Nom du NAS"
-        text="Est-ce qu'on peut pas allé se faire foutre un peu là ?"
-        imgSrc="https://via.placeholder.com/250"
-        links={[
-          { url: '#', text: 'Se connecter' },
-        ]}
-      />
-      <Card
-        title="Nom du NAS"
-        text="Est-ce qu'on peut pas allé se faire foutre un peu là ?"
-        imgSrc="https://via.placeholder.com/250"
-        links={[
-          { url: '#', text: 'Se connecter' },
-        ]}
-      />
-      <Card
-        title="Nom du NAS"
-        text="Est-ce qu'on peut pas allé se faire foutre un peu là ?"
-        imgSrc="https://via.placeholder.com/250"
-        links={[
-          { url: '#', text: 'Se connecter' },
-        ]}
-      />
+      <Footer></Footer>
     </div>
   );
 }

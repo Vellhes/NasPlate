@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import logo from '../img/nasplate.png';
 import { Link } from "react-router-dom";
+import Navbar from '../components/navbar/Navbar';
+import Footer from '../components/footer/Footer';
 
 
 export default function Register() {
@@ -56,89 +58,93 @@ export default function Register() {
         }
     }
     return (
-        <div id="body-form-register">
-            <div id="register">
-                <div id="register-form">
-                    {error && <p style={{ color: 'red' }}>{error}</p>}
-                    <div className="two-columns">
+        <div>
+            <Navbar></Navbar>
+            <div id="body-form-register">
+                <div id="register">
+                    <div id="register-form">
+                        {error && <p style={{ color: 'red' }}>{error}</p>}
+                        <div className="two-columns">
+                            <div className="form-item">
+                                <label htmlFor='prenom'>Nom</label>
+                                <input
+                                    id='nom'
+                                    type='text'
+                                    placeholder='Votre nom'
+                                    className="input-text"
+                                    valueLastName={lastName}
+                                    onChange={handleLastName}>
+                                </input>
+                            </div>
+                            <div className="form-item">
+                                <label htmlFor='prenom'>Prénom</label>
+                                <input
+                                    id='prenom'
+                                    type='text'
+                                    placeholder='Votre prénom'
+                                    className="input-text"
+                                    valueFirstName={firstName}
+                                    onChange={handleFirstName}/>
+    
+                            </div>
+                        </div>
                         <div className="form-item">
-                            <label htmlFor='prenom'>Nom</label>
+                            <label htmlFor='mail'>Adresse mail</label>
                             <input
-                                id='nom'
-                                type='text'
-                                placeholder='Votre nom'
+                                id='mail'
+                                type='email'
+                                placeholder='Votre adresse mail'
                                 className="input-text"
-                                valueLastName={lastName}
-                                onChange={handleLastName}>
+                                valueEmail={email}
+                                onChange={handleEmail}>
                             </input>
                         </div>
                         <div className="form-item">
-                            <label htmlFor='prenom'>Prénom</label>
+                            <label htmlFor='password'>Mot de passe</label>
                             <input
-                                id='prenom'
-                                type='text'
-                                placeholder='Votre prénom'
+                                id='password'
+                                type='password'
+                                placeholder='Votre mot de passe'
                                 className="input-text"
-                                valueFirstName={firstName}
-                                onChange={handleFirstName}/>
-   
+                                valuePassword={password}
+                                onChange={handlePassword}>
+                            </input>
+                        </div>
+                        <div className="form-item">
+                            <label htmlFor='validatePassword'>Valider le mot de passe</label>
+                            <input
+                                id='validatePassword'
+                                type='password'
+                                placeholder='Votre mot de passe'
+                                className="input-text"
+                                valueConfirmPassword={confirmPassword}
+                                onChange={handleConfirmPassword}>
+                            </input>
+                        </div>
+                        <div className="form-item">
+                            <button
+                                className="button-default"
+                                id="btn-inscription"
+                                onClick={handleRegister}>Valider l'inscription
+                            </button>
+                        </div>
+                        <div className='form-item'>
+                            <Link to="/login">
+                                Connectez-vous
+                            </Link>
                         </div>
                     </div>
-                    <div className="form-item">
-                        <label htmlFor='mail'>Adresse mail</label>
-                        <input
-                            id='mail'
-                            type='email'
-                            placeholder='Votre adresse mail'
-                            className="input-text"
-                            valueEmail={email}
-                            onChange={handleEmail}>
-                        </input>
+                    <div id="register-side">
+                        <div id="div-logo">
+                            <img src={logo} alt="logo" id="logo-register" /><br />
+                        </div>
+                        <h2>
+                            NasPlate - Inscription
+                        </h2>
                     </div>
-                    <div className="form-item">
-                        <label htmlFor='password'>Mot de passe</label>
-                        <input
-                            id='password'
-                            type='password'
-                            placeholder='Votre adresse mail'
-                            className="input-text"
-                            valuePassword={password}
-                            onChange={handlePassword}>
-                        </input>
-                    </div>
-                    <div className="form-item">
-                        <label htmlFor='validatePassword'>Valider le mot de passe</label>
-                        <input
-                            id='validatePassword'
-                            type='password'
-                            placeholder='Votre adresse mail'
-                            className="input-text"
-                            valueConfirmPassword={confirmPassword}
-                            onChange={handleConfirmPassword}>
-                        </input>
-                    </div>
-                    <div className="form-item">
-                        <button
-                            className="button-default"
-                            id="btn-inscription"
-                            onClick={handleRegister}>Valider l'inscription
-                        </button>
-                    </div>
-                    <div className='form-item'>
-                        <Link to="/login">
-                            Connectez-vous
-                        </Link>
-                    </div>
-                </div>
-                <div id="register-side">
-                    <div id="div-logo">
-                        <img src={logo} alt="logo" id="logo-register" /><br />
-                    </div>
-                    <h2>
-                        NasPlate - Inscription
-                    </h2>
                 </div>
             </div>
+            <Footer></Footer>
         </div>
     )
 }

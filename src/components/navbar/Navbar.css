@@ -3,8 +3,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 1.5rem;
-    background-color: #333;
+    padding: 0.5rem 1.5rem;
+    background-color: #00456d;
    }
    
    .navbar-container {
@@ -59,7 +59,8 @@
    }
    
    .navbar-item {
-    margin: 0 0.5rem;
+    list-style-type: none;
+    margin: 0 2.5rem;
    }
    
    .navbar-link {
