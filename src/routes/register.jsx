@@ -6,27 +6,27 @@ import Footer from '../components/footer/Footer';
 
 
 export default function Register() {
-    const [lastName, setLastName] = useState('DUSSAUSSOIS');
+    const [lastName, setLastName] = useState('');
     const handleLastName = (e) => {
         setLastName(e.target.value);
     };
 
-    const [firstName, setFirstName] = useState('Tom');
+    const [firstName, setFirstName] = useState('');
     const handleFirstName = (e) => {
         setFirstName(e.target.value);
     };
 
-    const [email, setEmail] = useState('tom.dussaussois@outlook.fr');
+    const [email, setEmail] = useState('');
     const handleEmail = (e) => {
         setEmail(e.target.value);
     };
 
-    const [password, setPassword] = useState('test56789');
+    const [password, setPassword] = useState('');
     const handlePassword = (e) => {
         setPassword(e.target.value);
     };
 
-    const [confirmPassword, setConfirmPassword] = useState('test5678945');
+    const [confirmPassword, setConfirmPassword] = useState('');
     const handleConfirmPassword = (e) => {
         setConfirmPassword(e.target.value);
     };
@@ -38,23 +38,23 @@ export default function Register() {
             const response = await fetch('', {
                 method: 'POST',
                 headers: {
-                    'Accept': 'application/json',
                     'Content-type': 'application/json',
                 },
                 body: JSON.stringify({ lastName, firstName, email, password, confirmPassword })
             })
 
+            console.log(response.ok)
             if (response.ok) {
                 // Register successfull
 
             } else {
                 // Error register
-                const errorMessage = await response.json();
-                setError(errorMessage.message);
+                // const errorMessage = await response.json();
+                // setError(errorMessage.message);
             }
         } catch (error) {
-            console.log("Erreur lors de l'inscription:", error);
-            setError("Erreur d'inscription");
+            // console.log("Erreur lors de l'inscription:", error);
+            // setError("Erreur d'inscription");
         }
     }
     return (
@@ -72,7 +72,6 @@ export default function Register() {
                                     type='text'
                                     placeholder='Votre nom'
                                     className="input-text"
-                                    valueLastName={lastName}
                                     onChange={handleLastName}>
                                 </input>
                             </div>
@@ -83,7 +82,6 @@ export default function Register() {
                                     type='text'
                                     placeholder='Votre prénom'
                                     className="input-text"
-                                    valueFirstName={firstName}
                                     onChange={handleFirstName}/>
     
                             </div>
@@ -95,7 +93,6 @@ export default function Register() {
                                 type='email'
                                 placeholder='Votre adresse mail'
                                 className="input-text"
-                                valueEmail={email}
                                 onChange={handleEmail}>
                             </input>
                         </div>
@@ -106,7 +103,6 @@ export default function Register() {
                                 type='password'
                                 placeholder='Votre mot de passe'
                                 className="input-text"
-                                valuePassword={password}
                                 onChange={handlePassword}>
                             </input>
                         </div>
@@ -117,7 +113,6 @@ export default function Register() {
                                 type='password'
                                 placeholder='Votre mot de passe'
                                 className="input-text"
-                                valueConfirmPassword={confirmPassword}
                                 onChange={handleConfirmPassword}>
                             </input>
                         </div>

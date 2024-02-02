@@ -1,16 +1,17 @@
 import { useState } from 'react';
 import logo from '../img/nasplate.png';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Navbar from '../components/navbar/Navbar';
 import Footer from '../components/footer/Footer';
 
 export default function Login() {
+    const navigate = useNavigate();
     const [email, setEmail] = useState('');
     const handleEmail = (e) => {
         setEmail(e.target.value);
     };
 
-    const [password, setPassword] = useState('test56789');
+    const [password, setPassword] = useState('');
     const handlePassword = (e) => {
         setPassword(e.target.value);
     };
@@ -37,6 +38,7 @@ export default function Login() {
                 // Récupération du token JWT de node pour pouvoir faire 
                 const token = await response.text(); // Convertir le contenu en texte
                 localStorage.setItem("AUTH_TOKEN", token);
+                navigate('/');
             } else {
                 // Error connection
                 const errorMessage = await response.json();
@@ -63,7 +65,6 @@ export default function Login() {
                                 type='text'
                                 placeholder='Votre identifiant'
                                 className="input-text"
-                                valueEmail={email} //Erreur du DOM dans la console
                                 onChange={handleEmail}>
                             </input>
                         </div>
@@ -74,7 +75,6 @@ export default function Login() {
                                 type='password'
                                 placeholder='Votre mot de passe'
                                 className="input-text"
-                                valuePassword={password} //Erreur du DOM dans la console
                                 onChange={handlePassword}>
                             </input>
                         </div>
