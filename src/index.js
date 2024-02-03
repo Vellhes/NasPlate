@@ -6,11 +6,12 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import App from './App';
-import Login from "./routes/login";
-import Register from "./routes/register";
+import Login from "./routes/Connexion/login";
+import Register from "./routes/Connexion/register";
 import Profil from "./routes/profil";
 import AddNasForm from "./routes/Nas/NasAddForm";
 import ListNas from "./routes/Nas/NasList";
+import Contact from "./routes/Contact";
 import reportWebVitals from './reportWebVitals';
 
 const router = createBrowserRouter([
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
   {
     path: "/ListNas",
     element : <ListNas/>
+  },
+  {
+    path : "/Contact",
+    element : <Contact/>
   }
 ]);
 

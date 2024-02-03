@@ -29,7 +29,7 @@ function Navbar() {
             <Link to="/" className="navbar-logo">Services</Link>
           </li>
           <li className="navbar-item">
-            <Link to="/" className="navbar-logo">Contact</Link>
+            <Link to="/Contact" className="navbar-logo">Contact</Link>
           </li>
         </ul>
         <div className="navbar">

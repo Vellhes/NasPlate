@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import logo from '../img/nasplate.png';
+import logo from '../../img/nasplate.png';
 import { Link, useNavigate } from "react-router-dom";
-import Navbar from '../components/navbar/Navbar';
-import Footer from '../components/footer/Footer';
+import Navbar from '../../components/navbar/Navbar';
+import Footer from '../../components/footer/Footer';
 
 export default function Login() {
     const navigate = useNavigate();
