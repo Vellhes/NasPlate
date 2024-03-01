@@ -7,7 +7,7 @@ function ValidateButton({CreateNas}){
 }
 
 export default function NasAddForm(){
-    function CreateNas(){
+    const handleCreateNas = async () => {
         var adresseReseau = document.getElementById('adresseReseau').value;
         var masqueReseau = document.getElementById('masqueReseau').value;
         var gateway = document.getElementById('gateway').value;
@@ -21,17 +21,28 @@ export default function NasAddForm(){
             if(adresseReseau.match(regex)!= null){
                 if(masqueReseau.match(regex) != null){
                     if(gateway.match(regex)!= null){
-                        //On créé la chaine contenant le JSON
-                        var jsonString = {
-                            "adresseReseau" : adresseReseau,
-                            "masqueReseau" : masqueReseau,
-                            "gateway" : gateway,
-                            "societe" : nomSociete,
-                            "service" : nomService,
-                            "pays" : pays
+                        try {
+                            const json = {
+                                adresseReseau : adresseReseau,
+                                masqueReseau : masqueReseau,
+                                gateway : gateway,
+                                societe : nomSociete,
+                                service : nomService,
+                                pays : pays
+                            }
+                            const response = await fetch('http://localhost:3000/nas',{
+                                method: 'POST',
+                                headers: {
+                                    'Content-type': 'application/json',
+                                    'Authorization' : localStorage.getItem("TOKEN")
+                                },
+                                body: JSON.stringify(json)
+                            })
+                            console.log(response)
+                        }catch(error){
+                            console.log("Erreur dans l'ajout du nas", error)
+                            alert("Une erreur est survenue : "+error)
                         }
-
-                        
                         
                     }else{
                         alert("Votre masque de sous-réseau ne correspond pas au format attendu 'XXX.XXX.XXX.XXX'");
@@ -82,7 +93,7 @@ export default function NasAddForm(){
                     </div>
 
                     <ValidateButton
-                        CreateNas={CreateNas}
+                        CreateNas={handleCreateNas}
                     />
 
                 </div>

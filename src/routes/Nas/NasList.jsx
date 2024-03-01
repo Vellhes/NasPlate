@@ -5,7 +5,6 @@ import Footer from '../../components/footer/Footer';
 import Card from '../../components/card/Card';
 
 export default function ListNas() {
-
     function ValidateButton({CreateNas}){
         return(
             <div className="form-item">
@@ -14,7 +13,8 @@ export default function ListNas() {
         )
     }
 
-    function CreateNas(){
+    const handleCreateNas = async () => {
+        var nomNas = document.getElementById('nomNas').value;
         var adresseReseau = document.getElementById('adresseReseau').value;
         var masqueReseau = document.getElementById('masqueReseau').value;
         var gateway = document.getElementById('gateway').value;
@@ -22,20 +22,34 @@ export default function ListNas() {
         var nomService = document.getElementById('nomService').value;
         var pays = document.getElementById('pays').value;
         const regex = /^((25[0-5]|(2[0-4]|1\d|[1-9]|)\d)\.?\b){4}$/g;
-        if(adresseReseau === "" || masqueReseau === "" || gateway === "" || nomSociete === "" || nomService === "" || pays === ""){
+        if(nomNas === "" || adresseReseau === "" || masqueReseau === "" || gateway === "" || nomSociete === "" || nomService === "" || pays === ""){
             alert("Veuillez remplir tous les champs");
         }else{
             if(adresseReseau.match(regex)!= null){
                 if(masqueReseau.match(regex) != null){
                     if(gateway.match(regex)!= null){
-                        //On créé la chaine contenant le JSON
-                        var jsonString = {
-                            "adresseReseau" : adresseReseau,
-                            "masqueReseau" : masqueReseau,
-                            "gateway" : gateway,
-                            "societe" : nomSociete,
-                            "service" : nomService,
-                            "pays" : pays
+                        try {
+                            const json = {
+                                nom : nomNas,
+                                adresseReseau : adresseReseau,
+                                masqueReseau : masqueReseau,
+                                gateway : gateway,
+                                societe : nomSociete,
+                                service : nomService,
+                                pays : pays
+                            }
+                            const response = await fetch('http://localhost:3000/nas',{
+                                method: 'POST',
+                                headers: {
+                                    'Content-type': 'application/json',
+                                    'Authorization' : localStorage.getItem("AUTH_TOKEN")
+                                },
+                                body: JSON.stringify(json)
+                            })
+                            console.log(response)
+                        }catch(error){
+                            console.log("Erreur dans l'ajout du nas", error)
+                            alert("Une erreur est survenue : "+error)
                         }
                     } else {
                         alert("Votre masque de sous-réseau ne correspond pas au format attendu 'XXX.XXX.XXX.XXX'");
@@ -119,6 +133,10 @@ export default function ListNas() {
                     <div className="cellDefault">
                         <h2 className="title-modal">Ajouter votre NAS</h2>
                         <div className="form-item">
+                            <label >Le nom de votre NAS</label>
+                            <input id='nomNas' placeholder='Nom nas' className="input-text"></input>
+                        </div>
+                        <div className="form-item">
                             <label >Adresse réseau</label>
                             <input id='adresseReseau' placeholder='xxx.xxx.xxx.xxx' className="input-text"></input>
                         </div>
@@ -151,7 +169,7 @@ export default function ListNas() {
                         <div className="button-modal">
                             <button className="button-return" onClick={closeModal}>Fermer</button>
                             <ValidateButton
-                                CreateNas={CreateNas}
+                                CreateNas={handleCreateNas}
                             />
                         </div>
 

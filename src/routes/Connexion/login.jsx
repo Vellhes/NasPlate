@@ -37,6 +37,7 @@ export default function Login() {
                 // Connection successfull
                 // Récupération du token JWT de node pour pouvoir faire 
                 const token = await response.text(); // Convertir le contenu en texte
+                
                 localStorage.setItem("AUTH_TOKEN", token);
                 navigate('/');
             } else {
