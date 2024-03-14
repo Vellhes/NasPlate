@@ -11,6 +11,7 @@ import Register from "./routes/Connexion/register";
 import Profil from "./routes/User/profil";
 import AddNasForm from "./routes/Nas/NasAddForm";
 import ListNas from "./routes/Nas/NasList";
+import DetailNas from "./routes/Nas/NasDetail";
 import Contact from "./routes/Contact";
 import reportWebVitals from './reportWebVitals';
 import MonIntervant from './routes/User/monIntervenant';
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
   {
     path: "/ListNas",
     element : <ListNas/>
+  },
+  {
+    path: "/DetailNas",
+    element : <DetailNas/>
   },
   {
     path : "/Contact",

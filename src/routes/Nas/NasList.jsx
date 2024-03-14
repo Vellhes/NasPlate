@@ -95,12 +95,12 @@ export default function ListNas() {
             .then(dataNas => {
                 setListNas(dataNas.data);
             })
-            .catch(error => console.error("Erreur lors du fetch"))
+            .catch(error => console.error("Erreur lors du fetch", error))
         } catch (error) {
             console.log('Erreur lors de la connexion : ', error);
         }
     }
-
+    // handleListNas();
     return (
         <div>
             <Navbar />
@@ -116,9 +116,10 @@ export default function ListNas() {
                         title={nasItem.nomNas}
                         text={nasItem.description}
                         imgSrc="https://via.placeholder.com/250"
-                        links={[
-                            { url: '#', text: 'Se connecter' },
+                        linksConnection={[
+                            { url: '#', text: `Se connecter` },
                         ]}
+                        linksDetail={nasItem.idNas}
                     />
                 ))}
             </div>

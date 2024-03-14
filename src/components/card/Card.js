@@ -1,7 +1,8 @@
 import React from 'react';
 import './Card.css';
+import { Link } from 'react-router-dom';
 
-function Card({ title, text, imgSrc, links }) {
+function Card({ title, text, imgSrc, linksConnection, linksDetail }) {
   return (
     <div className="card">
       <img src={imgSrc} alt={title} />
@@ -11,9 +12,12 @@ function Card({ title, text, imgSrc, links }) {
         </div>
         <p>{text}</p>
         <div className="card-links">
-          {links.map((link, index) => (
+          {linksConnection.map((link, index) => (
             <a key={index} href={link.url}>{link.text}</a>
           ))}
+        </div>
+        <div>
+          <Link to={`/DetailNas?idNas=${linksDetail}`}>Voir le détail</Link>
         </div>
       </div>
     </div>
