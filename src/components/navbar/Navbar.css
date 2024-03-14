@@ -71,3 +71,13 @@
    .navbar-link:hover {
     text-decoration: underline;
    }
+
+   .icon-user {
+    height: 30px;
+    width : 30px;
+   }
+
+   .logo{
+    height: 60px;
+    width : auto;
+   }

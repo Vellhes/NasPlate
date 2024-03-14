@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './Navbar.css';
 import { Link } from "react-router-dom";
+import userIcon from "../../img/user-icon.png"
+import logo from "../../img/nasplate.png"
 
 function Navbar() {
  const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +17,7 @@ function Navbar() {
         <ul className={`navbar-menu ${isOpen ? 'open' : ''}`}>
           <li className="navbar-item">
             <Link to="/" className="navbar-logo">
-              <img src="./../img/nasplate.png" alt="logo NasPlate">
+              <img className="logo" src={logo} alt="logo NasPlate">
               </img>
             </Link>
           </li>
@@ -34,6 +36,9 @@ function Navbar() {
         </ul>
         <div className="navbar">
           <div className="navbar-container">
+            <li className="navbar-item">
+              <Link to="/Profil" className="navbar-logo"><img className='icon-user' src={userIcon} alt="icon-user" /></Link>
+            </li>
             <li className="navbar-item">
               <Link to="/login" className="navbar-logo">Connexion</Link>
             </li>

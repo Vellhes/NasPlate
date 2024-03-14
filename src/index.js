@@ -8,11 +8,12 @@ import {
 import App from './App';
 import Login from "./routes/Connexion/login";
 import Register from "./routes/Connexion/register";
-import Profil from "./routes/profil";
+import Profil from "./routes/User/profil";
 import AddNasForm from "./routes/Nas/NasAddForm";
 import ListNas from "./routes/Nas/NasList";
 import Contact from "./routes/Contact";
 import reportWebVitals from './reportWebVitals';
+import MonIntervant from './routes/User/monIntervenant';
 
 const router = createBrowserRouter([
   {
@@ -28,10 +29,6 @@ const router = createBrowserRouter([
     element : <Register/>
   },
   {
-    path : "/profil",
-    element : <Profil/>
-  },
-  {
     path : "/AddNas",
     element : <AddNasForm/>
   },
@@ -42,6 +39,14 @@ const router = createBrowserRouter([
   {
     path : "/Contact",
     element : <Contact/>
+  },
+  {
+    path : "/Profil",
+    element : <Profil/>
+  },
+  {
+    path : "/MonIntervenant",
+    element : <MonIntervant/>
   }
 ]);
 

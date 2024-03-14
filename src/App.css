@@ -98,6 +98,16 @@ html{
   font-size: 16px;
 }
 
+.button-default-auto{
+  background-color: black ;
+  color : white;
+  padding :0px 10px 0px 10px;
+  height: 32px;
+  border-radius: 20px;
+  border : none;
+  font-size: 16px;
+}
+
 .button-default:hover {
   cursor: pointer;
  }
@@ -197,4 +207,13 @@ html{
 
 .button-modal > * {
   flex-grow: 1;
+}
+
+.flexProfil{
+  display: flex;
+}
+
+.profilBody{
+  width : stretch;
+  padding : 15px;
 }
