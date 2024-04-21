@@ -17,7 +17,7 @@ export default function Profil(){
                         <label>Prénom</label>
                         <input type="text" className="input-text" id="prenom"></input>
                         <label>Mail</label>
-                        <input type="text" className="input-text" id="mail"></input>
+                        <input type="email" className="input-text" id="mail"></input>
                         <br/>
                         <button className="button-default-auto">Enregistrer</button>
                         <p>Changer votre mot de passe</p>
