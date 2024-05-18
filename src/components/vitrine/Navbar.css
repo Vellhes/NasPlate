@@ -1,0 +1,83 @@
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1.5rem;
+    background-color: #00456d;
+   }
+   
+   .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+   }
+   
+   .navbar-logo {
+    color: #fff;
+    text-decoration: none;
+   }
+   
+   .navbar-toggle {
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+   }
+   
+   .navbar-toggle .bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    margin: 4px 0;
+    background-color: #fff;
+    transition: all 0.3s ease;
+   }
+   
+   .navbar-toggle.open .bar:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+   }
+   
+   .navbar-toggle.open .bar:nth-child(2) {
+    opacity: 0;
+   }
+   
+   .navbar-toggle.open .bar:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+   }
+   
+   .navbar-menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease;
+   }
+   
+   .navbar-menu.open {
+    display: none;
+   }
+   
+   .navbar-item {
+    list-style-type: none;
+    margin: 0 2.5rem;
+   }
+   
+   .navbar-link {
+    color: #fff;
+    text-decoration: none;
+   }
+   
+   .navbar-link:hover {
+    text-decoration: underline;
+   }
+
+   .icon-user {
+    height: 30px;
+    width : 30px;
+   }
+
+   .logo{
+    height: 60px;
+    width : auto;
+   }

@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Neusharp';
+  src: url('./fonts/neusharp/Neusharp-Bold.otf') format('opentype')
+      
+}
+
 :root {
   --border-radius-div: 20px;
 }
@@ -216,4 +222,57 @@ html{
 .profilBody{
   width : stretch;
   padding : 15px;
+}
+
+.container{
+  width : 100%;
+  min-height: 800px;
+}
+
+.accueil-1st-block{
+  background-image: url(./img/dedicated-server-bg.jpg);
+  height : 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  -moz-filter: blur(8px);
+  -o-filter: blur(8px);
+  -ms-filter: blur(8px);
+
+}
+
+.title{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  text-align: center;
+  font-size: 24px;
+  padding : 36px;
+}
+
+.sloganTitle{
+  font-family: "Neusharp" ;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.btnWhite{
+  background-color: white;
+  padding : 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.logoTitle{
+  height: 300px;
 }

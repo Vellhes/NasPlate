@@ -15,11 +15,11 @@ import DetailNas from "./routes/Nas/NasDetail";
 import Contact from "./routes/Contact";
 import reportWebVitals from './reportWebVitals';
 import MonIntervant from './routes/User/monIntervenant';
-
+import Accueil from './routes/Vitrine/Accueil';
 const router = createBrowserRouter([
   {
     path: "/",
-    element : <App/>
+    element : <Accueil/>
   },
   {
     path : "/login",
