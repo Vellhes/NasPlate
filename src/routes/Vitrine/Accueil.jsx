@@ -18,10 +18,11 @@ export default function Accueil(){
                             All your nas in one hand
                         </h1>
                     </div>
+                    
                     <div>
                         <p>Retrouver l'ensemble de vos NAS en une plateforme.</p>
                         <br/>
-                        <Link className="btnWhite" to='/Le-projet'>
+                        <Link className="btnWhite" to='/Le-Projet'>
                             En savoir plus
                         </Link>
                     </div>

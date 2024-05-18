@@ -16,6 +16,7 @@ import Contact from "./routes/Contact";
 import reportWebVitals from './reportWebVitals';
 import MonIntervant from './routes/User/monIntervenant';
 import Accueil from './routes/Vitrine/Accueil';
+import Projet from './routes/Vitrine/Projet';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
   {
     path : "/MonIntervenant",
     element : <MonIntervant/>
+  },
+  {
+    path : "/Le-Projet",
+    element : <Projet/>
   }
 ]);
 
