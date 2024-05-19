@@ -25,10 +25,10 @@ function Navbar() {
             <Link to="/" className="navbar-logo">Home</Link>
           </li> */}
           <li className="navbar-item">
-            <Link to="/" className="navbar-logo">Le projet</Link>
+            <Link to="/Le-Projet" className="navbar-logo">Le projet</Link>
           </li>
           <li className="navbar-item">
-            <Link to="/" className="navbar-logo">Qui-sommes-nous</Link>
+            <Link to="/Equipe" className="navbar-logo">Qui-sommes-nous</Link>
           </li>
           <li className="navbar-item">
             <Link to="/Contact" className="navbar-logo">Nos tarifs</Link>

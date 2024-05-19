@@ -32,7 +32,7 @@ export default function Projet(){
                     </p>
                     <br/>
                     <div className="item-horizontal-center">
-                        <Link className="btnWhite">
+                        <Link to="/Equipe" className="btnWhite">
                             Découvrir notre équipe
                         </Link> 
                     </div>
