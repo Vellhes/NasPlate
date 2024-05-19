@@ -4,6 +4,9 @@ import Navbar from "../../components/vitrine/navbar"
 import TeamIMG from "../../img/Sept-9-Benefits-of-Group-Work_web.jpg"
 import BastienIMG from "../../img/bastien.png"
 import MaloIMG from "../../img/malo.png"
+import DylanIMG from "../../img/dylan.png"
+import DussIMG from "../../img/duss.png"
+import ClementIMG from "../../img/clement.png"
 
 export default function Equipe(){
     return(
@@ -44,12 +47,42 @@ export default function Equipe(){
                             <img src={BastienIMG} alt="bastien" className="image-auto-fit"/>
                         </div>
                         <div className="flex-column-80 vertical-align">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in purus semper ligula facilisis interdum. Donec interdum leo at lacinia finibus. Donec sit amet sapien nec lacus suscipit imperdiet quis quis augue. Ut sed lectus ac dui condimentum efficitur non ut augue. Fusce egestas nulla iaculis porta dapibus. Aenean ac odio elit. Nam sed maximus arcu. Morbi efficitur ex erat, id mattis ipsum dictum nec. Donec in scelerisque mauris, nec dignissim justo. Vivamus sodales nisl consectetur ante elementum tempor. Nam ultrices consequat magna quis pretium. Maecenas nibh turpis, porttitor in urna non, ullamcorper tincidunt tortor. Aenean non mauris at augue mollis venenatis sed quis metus. Curabitur iaculis leo ornare pharetra tristique. Fusce mauris nisl, suscipit id posuere ut, fringilla rhoncus odio.
+                            <div>
+                            <h3>Bastien COLLIGNON</h3>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Donec in purus semper ligula facilisis interdum. 
+                            Donec interdum leo at lacinia finibus. 
+                            Donec sit amet sapien nec lacus suscipit imperdiet quis quis augue. 
+                            Ut sed lectus ac dui condimentum efficitur non ut augue. 
+                            Fusce egestas nulla iaculis porta dapibus. Aenean ac odio elit. 
+                            Nam sed maximus arcu. Morbi efficitur ex erat, id mattis ipsum dictum nec. 
+                            Donec in scelerisque mauris, nec dignissim justo. 
+                            Vivamus sodales nisl consectetur ante elementum tempor. 
+                            Nam ultrices consequat magna quis pretium. Maecenas nibh turpis, porttitor in urna non, ullamcorper tincidunt tortor. 
+                            Aenean non mauris at augue mollis venenatis sed quis metus. 
+                            Curabitur iaculis leo ornare pharetra tristique. 
+                            Fusce mauris nisl, suscipit id posuere ut, fringilla rhoncus odio.
+                            </div>
                         </div>
                     </div>
                     <div className="equipe-membre" id="bloc-malo">
                         <div className="flex-column-80 vertical-align">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in purus semper ligula facilisis interdum. Donec interdum leo at lacinia finibus. Donec sit amet sapien nec lacus suscipit imperdiet quis quis augue. Ut sed lectus ac dui condimentum efficitur non ut augue. Fusce egestas nulla iaculis porta dapibus. Aenean ac odio elit. Nam sed maximus arcu. Morbi efficitur ex erat, id mattis ipsum dictum nec. Donec in scelerisque mauris, nec dignissim justo. Vivamus sodales nisl consectetur ante elementum tempor. Nam ultrices consequat magna quis pretium. Maecenas nibh turpis, porttitor in urna non, ullamcorper tincidunt tortor. Aenean non mauris at augue mollis venenatis sed quis metus. Curabitur iaculis leo ornare pharetra tristique. Fusce mauris nisl, suscipit id posuere ut, fringilla rhoncus odio.
+                            <div className="align-left">
+                            <h3>Malo BEHR</h3>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Donec in purus semper ligula facilisis interdum. 
+                            Donec interdum leo at lacinia finibus. 
+                            Donec sit amet sapien nec lacus suscipit imperdiet quis quis augue. 
+                            Ut sed lectus ac dui condimentum efficitur non ut augue. 
+                            Fusce egestas nulla iaculis porta dapibus. Aenean ac odio elit. 
+                            Nam sed maximus arcu. Morbi efficitur ex erat, id mattis ipsum dictum nec. 
+                            Donec in scelerisque mauris, nec dignissim justo. 
+                            Vivamus sodales nisl consectetur ante elementum tempor. 
+                            Nam ultrices consequat magna quis pretium. Maecenas nibh turpis, porttitor in urna non, ullamcorper tincidunt tortor. 
+                            Aenean non mauris at augue mollis venenatis sed quis metus. 
+                            Curabitur iaculis leo ornare pharetra tristique. 
+                            Fusce mauris nisl, suscipit id posuere ut, fringilla rhoncus odio.
+                            </div>
                         </div>
                         <div className="flex-column-20 vertical-align flex-justify-center">
                             <img src={MaloIMG} alt="malo" className="image-auto-fit"/>
@@ -57,26 +90,71 @@ export default function Equipe(){
                     </div>
                     <div className="equipe-membre" id="bloc-dylan">
                         <div className="flex-column-20 vertical-align flex-justify-center">
-                            <img src={BastienIMG} alt="dylan" className="image-auto-fit"/>
+                            <img src={DylanIMG} alt="dylan" className="image-auto-fit"/>
                         </div>
                         <div className="flex-column-80 vertical-align">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in purus semper ligula facilisis interdum. Donec interdum leo at lacinia finibus. Donec sit amet sapien nec lacus suscipit imperdiet quis quis augue. Ut sed lectus ac dui condimentum efficitur non ut augue. Fusce egestas nulla iaculis porta dapibus. Aenean ac odio elit. Nam sed maximus arcu. Morbi efficitur ex erat, id mattis ipsum dictum nec. Donec in scelerisque mauris, nec dignissim justo. Vivamus sodales nisl consectetur ante elementum tempor. Nam ultrices consequat magna quis pretium. Maecenas nibh turpis, porttitor in urna non, ullamcorper tincidunt tortor. Aenean non mauris at augue mollis venenatis sed quis metus. Curabitur iaculis leo ornare pharetra tristique. Fusce mauris nisl, suscipit id posuere ut, fringilla rhoncus odio.
+                            <div>
+                            <h3>Dylan SCHMIDT</h3>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Donec in purus semper ligula facilisis interdum. 
+                            Donec interdum leo at lacinia finibus. 
+                            Donec sit amet sapien nec lacus suscipit imperdiet quis quis augue. 
+                            Ut sed lectus ac dui condimentum efficitur non ut augue. 
+                            Fusce egestas nulla iaculis porta dapibus. Aenean ac odio elit. 
+                            Nam sed maximus arcu. Morbi efficitur ex erat, id mattis ipsum dictum nec. 
+                            Donec in scelerisque mauris, nec dignissim justo. 
+                            Vivamus sodales nisl consectetur ante elementum tempor. 
+                            Nam ultrices consequat magna quis pretium. Maecenas nibh turpis, porttitor in urna non, ullamcorper tincidunt tortor. 
+                            Aenean non mauris at augue mollis venenatis sed quis metus. 
+                            Curabitur iaculis leo ornare pharetra tristique. 
+                            Fusce mauris nisl, suscipit id posuere ut, fringilla rhoncus odio.
+                            </div>
                         </div>
                     </div>
                     <div className="equipe-membre" id="bloc-tom">
-                        <div className="flex-column-80 vertical-align">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in purus semper ligula facilisis interdum. Donec interdum leo at lacinia finibus. Donec sit amet sapien nec lacus suscipit imperdiet quis quis augue. Ut sed lectus ac dui condimentum efficitur non ut augue. Fusce egestas nulla iaculis porta dapibus. Aenean ac odio elit. Nam sed maximus arcu. Morbi efficitur ex erat, id mattis ipsum dictum nec. Donec in scelerisque mauris, nec dignissim justo. Vivamus sodales nisl consectetur ante elementum tempor. Nam ultrices consequat magna quis pretium. Maecenas nibh turpis, porttitor in urna non, ullamcorper tincidunt tortor. Aenean non mauris at augue mollis venenatis sed quis metus. Curabitur iaculis leo ornare pharetra tristique. Fusce mauris nisl, suscipit id posuere ut, fringilla rhoncus odio.
+                    <div className="flex-column-80 vertical-align">
+                        <div className="align-left">
+                            <h3>Tom DUSSAUSSOIS</h3>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Donec in purus semper ligula facilisis interdum. 
+                            Donec interdum leo at lacinia finibus. 
+                            Donec sit amet sapien nec lacus suscipit imperdiet quis quis augue. 
+                            Ut sed lectus ac dui condimentum efficitur non ut augue. 
+                            Fusce egestas nulla iaculis porta dapibus. Aenean ac odio elit. 
+                            Nam sed maximus arcu. Morbi efficitur ex erat, id mattis ipsum dictum nec. 
+                            Donec in scelerisque mauris, nec dignissim justo. 
+                            Vivamus sodales nisl consectetur ante elementum tempor. 
+                            Nam ultrices consequat magna quis pretium. Maecenas nibh turpis, porttitor in urna non, ullamcorper tincidunt tortor. 
+                            Aenean non mauris at augue mollis venenatis sed quis metus. 
+                            Curabitur iaculis leo ornare pharetra tristique. 
+                            Fusce mauris nisl, suscipit id posuere ut, fringilla rhoncus odio.
+                            </div>
                         </div>
                         <div className="flex-column-20 vertical-align flex-justify-center">
-                            <img src={MaloIMG} alt="tom" className="image-auto-fit"/>
+                            <img src={DussIMG} alt="tom" className="image-auto-fit"/>
                         </div> 
                     </div>
                     <div className="equipe-membre" id="bloc-clement">
                         <div className="flex-column-20 vertical-align flex-justify-center">
-                            <img src={BastienIMG} alt="clement" className="image-auto-fit"/>
+                            <img src={ClementIMG} alt="clement" className="image-auto-fit"/>
                         </div>
                         <div className="flex-column-80 vertical-align">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in purus semper ligula facilisis interdum. Donec interdum leo at lacinia finibus. Donec sit amet sapien nec lacus suscipit imperdiet quis quis augue. Ut sed lectus ac dui condimentum efficitur non ut augue. Fusce egestas nulla iaculis porta dapibus. Aenean ac odio elit. Nam sed maximus arcu. Morbi efficitur ex erat, id mattis ipsum dictum nec. Donec in scelerisque mauris, nec dignissim justo. Vivamus sodales nisl consectetur ante elementum tempor. Nam ultrices consequat magna quis pretium. Maecenas nibh turpis, porttitor in urna non, ullamcorper tincidunt tortor. Aenean non mauris at augue mollis venenatis sed quis metus. Curabitur iaculis leo ornare pharetra tristique. Fusce mauris nisl, suscipit id posuere ut, fringilla rhoncus odio.
+                            <div>
+                            <h3>Clément ZINGRAFF</h3>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Donec in purus semper ligula facilisis interdum. 
+                            Donec interdum leo at lacinia finibus. 
+                            Donec sit amet sapien nec lacus suscipit imperdiet quis quis augue. 
+                            Ut sed lectus ac dui condimentum efficitur non ut augue. 
+                            Fusce egestas nulla iaculis porta dapibus. Aenean ac odio elit. 
+                            Nam sed maximus arcu. Morbi efficitur ex erat, id mattis ipsum dictum nec. 
+                            Donec in scelerisque mauris, nec dignissim justo. 
+                            Vivamus sodales nisl consectetur ante elementum tempor. 
+                            Nam ultrices consequat magna quis pretium. Maecenas nibh turpis, porttitor in urna non, ullamcorper tincidunt tortor. 
+                            Aenean non mauris at augue mollis venenatis sed quis metus. 
+                            Curabitur iaculis leo ornare pharetra tristique. 
+                            Fusce mauris nisl, suscipit id posuere ut, fringilla rhoncus odio.
+                            </div>
                         </div>
                     </div>
                 </div>

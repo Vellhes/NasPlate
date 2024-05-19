@@ -362,8 +362,8 @@ html{
 
 .vertical-align{
   display: flex;
-    justify-content: space-between;
-    align-items: center;
+  justify-content: space-between;
+  align-items: center;
     
 }
 
@@ -395,11 +395,15 @@ html{
 }
 
 .flex-column-20{
-  width : 20%;
+  width : 15%;
   padding : 15px;
 }
 
 .flex-column-80{
   width : 80%;
   padding : 15px;
+}
+
+.align-left > h3{
+  text-align: right;
 }
