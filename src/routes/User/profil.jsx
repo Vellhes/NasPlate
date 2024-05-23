@@ -3,7 +3,6 @@ import Navbar from "../../components/navbar/Navbar"
 import ProfilMenu from "../../components/profilMenu/profilMenu"
 
 export default function Profil(){
-    console.log("aaa",localStorage.getItem("AUTH_TOKEN"))
     return(
         <div>
             <Navbar></Navbar>
