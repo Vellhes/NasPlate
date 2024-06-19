@@ -66,6 +66,8 @@ export default function NasDetail(props) {
         setIsModalOpen(false);
     };
 
+  
+
     return (
         <div>
             <Navbar></Navbar>
@@ -73,18 +75,19 @@ export default function NasDetail(props) {
                     {time}
                 </div>
                 {start ? (
-          <button
-            className="button"
-            style={{ backgroundColor: "#820000", color: "red" }}
-            onClick={() => setStart(false)}
-          >
-            Stop
-          </button>
-        ) : (
-          <button className="button" onClick={() => setStart(true)}>
-            Start
-          </button>
-        )}
+                  <button
+                    className="button"
+                    style={{ backgroundColor: "#820000", color: "red" }}
+                    onClick={() => setStart(false)}
+                  >
+                    Stop
+                  </button>
+                ) : (
+                  <button className="button" onClick={() => setStart(true)}>
+                    Start
+                  </button>
+                )}
+                <button>PDF</button>
         
             <Footer></Footer>
             <Modal
