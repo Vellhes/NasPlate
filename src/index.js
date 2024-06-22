@@ -18,6 +18,7 @@ import MonIntervant from './routes/User/monIntervenant';
 import Accueil from './routes/Vitrine/Accueil';
 import Projet from './routes/Vitrine/Projet';
 import Equipe from './routes/Vitrine/Equipe';
+import { TerminalContextProvider } from "react-terminal";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -68,7 +69,9 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={ router } />
+    <TerminalContextProvider>
+      <RouterProvider router={ router } />
+    </TerminalContextProvider>
   </React.StrictMode>
 );
 
